@@ -21,15 +21,9 @@ def french_dict():
         'Love' : 'Amour',
         'Music' : 'Musique',
     }     
-    word = input('Enter your english word : ')
-    print(d[word]) 
-print('Welcome to your dictionary')
-print()
-Choice = int(input('Please enter the number for your language : '))
-if Choice == 1 : 
-    french_dict()
-else : 
-print ('Language not found')
+word = input('Enter your english word : ')
+print(d[word])
+def Igala() :
        words = {
     "come": "ya",
     "stand": "de",
@@ -56,18 +50,19 @@ print ('Language not found')
     "everything": "ogbogbo",
     "mother": "iya"
 }
+word = input('Enter your english word : ')
+print(d[word]) 
 
-print("Translate Words from English to Igala")
-print("Choose a word from the list below:\n")
+print('Welcome to your dictionary')
+print(1 = "french") 
+print(2 = "Igala") 
+Choice = int(input('Please enter the number for your language : '))
+if Choice == 1 : 
+    french_dict()
+elif Choice == 2 : 
+    Igala_dict()
+else :
+print ('Language not found')
 
-for word in words:
-    print("--", word)
 
-while True:
-    word = input("\nEnter word to be translated: ").lower()
 
-    if word in words:
-        print(f"'{word}' means '{words[word]}'")
-        break
-    else:
-        print(f"Sorry, '{word}' is not in the dictionary. Try again.") 11
