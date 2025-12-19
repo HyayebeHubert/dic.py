@@ -52,15 +52,43 @@ def Igala() :
 }
 word = input('Enter your english word : ')
 print(d[word]) 
-
+def yoruba_dict():
+words = {
+    "water": "omi",
+    "food": "ounje",
+    "house": "ile",
+    "man": "okunrin",
+    "woman": "obinrin",
+    "child": "omo",
+    "book": "iwe",
+    "school": "ile-iwe",
+    "sun": "oorun",
+    "moon": "osupa",
+    "dog": "aja",
+    "cat": "ologbo",
+    "road": "ona",
+    "car": "oko ayokele",
+    "money": "owo",
+    "friend": "ore",
+    "love": "ife",
+    "day": "ojo",
+    "night": "oru",
+    "teacher": "oluko"
+}
+word = input( 'enter your english word:' )
+print(d[word])
+yoruba_dict()
 print('Welcome to your dictionary')
 print(1 = "french") 
 print(2 = "Igala") 
+print(3 = "yoruba") 
 Choice = int(input('Please enter the number for your language : '))
 if Choice == 1 : 
     french_dict()
 elif Choice == 2 : 
     Igala_dict()
+    if choice == 3
+    Yoruba_dict()
 else :
 print ('Language not found')
 
