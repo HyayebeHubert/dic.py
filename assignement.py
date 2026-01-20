@@ -1,5 +1,5 @@
-def french_dict():
-    d = {
+import streamlit as st
+french = {
         'House' : 'Maison',
         'Book' : 'Livre',
         'Water' : 'Eau',
@@ -20,11 +20,9 @@ def french_dict():
         'Work' : 'Travail',
         'Love' : 'Amour',
         'Music' : 'Musique',
-    }     
-word = input('Enter your english word : ')
-print(d[word])
-def Igala() :
-       words = {
+    }
+
+Igala = {
     "come": "ya",
     "stand": "de",
     "sit": "kpe",
@@ -49,11 +47,9 @@ def Igala() :
     "i want": "mi fẹ",
     "everything": "ogbogbo",
     "mother": "iya"
-}
-word = input('Enter your english word : ')
-print(d[word]) 
-def yoruba_dict():
-words = {
+} 
+
+yoruba = {
     "water": "omi",
     "food": "ounje",
     "house": "ile",
@@ -75,27 +71,8 @@ words = {
     "night": "oru",
     "teacher": "oluko"
 }
-word = input( 'enter your english word:' )
-print(d[word])
-yoruba_dict()
-print('Welcome to your dictionary')
-print(1 = "french") 
-print(2 = "Igala") 
-print(3 = "yoruba") 
-Choice = int(input('Please enter the number for your language : '))
-if Choice == 1 : 
-    french_dict()
-elif Choice == 2 : 
-    Igala_dict()
-    if choice == 3
-    Yoruba_dict()
-else :
-print ('Language not found')
 
-word = input ( 'enter your english word:')
-print(d[word])
-def hausa_dict():
-words = {
+hausa = {
     "chair": "kujera"
     "stone": "dutse"
     "bag": "jaka"
@@ -116,3 +93,27 @@ words = {
     "water": "ruwa"
     "horse": "doki"
     "bone': "Kashi"
+choice = st.selectbox9('language',('french','Igala','yoruba', 'hausa',))
+def search_dictionary(word, dictionary):
+    return dictionary[word]
+
+if choice == 'french':
+    dictionary = french
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+ elif choice == 'Igala':
+    dictionary = Igala
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+ elif choice == 'yoruba':
+    dictionary = yoruba
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+ elif choice == 'hausa':
+    dictionary = hausa
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
