@@ -93,6 +93,7 @@ hausa = {
     "water": "ruwa"
     "horse": "doki"
     "bone': "Kashi"
+}
 choice = st.selectbox9('language',('french','Igala','yoruba', 'hausa',))
 def search_dictionary(word, dictionary):
     return dictionary[word]
@@ -117,3 +118,4 @@ if choice == 'french':
     your_word = st.text_input('Enter Your word: ')
     st.button('search', on_click = lambda:
      st.title(search_dictionary(your_word.lower(), dictionary)))
+
